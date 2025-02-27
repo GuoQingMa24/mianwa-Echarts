@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF);
+}
 body{
 
     line-height: 1.15;
@@ -30,6 +34,7 @@ header{
 }
 .mainbox{
     display: flex;
+    position: relative;
     min-width: 1024px;
     max-width: 1920px;
     margin: 0 auto;
@@ -40,6 +45,98 @@ header{
     }
     .column:nth-child(2){
         flex: 5;
+        margin:0 0.125rem 0.1875rem;
+    }
+    .panel {
+        position: relative;
+        height: 3.875rem;
+        border: 1px solid rgba(25, 186, 139, 0.17);
+        background: rgba(255, 255, 255, 0.04) url(images/line.png);
+        padding: 0 0.1875rem 0.5rem;
+        margin-bottom: 0.1875rem;
+    }
+    .panel::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #02a6b5;
+        border-left: 2px solid #02a6b5;
+    }
+    .panel::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #02a6b5;
+        border-right: 2px solid #02a6b5;
+    }
+    .panel .panel-footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .panel .panel-footer::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #02a6b5;
+        border-left: 2px solid #02a6b5;
+    }
+    .panel .panel-footer::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #02a6b5;
+        border-right: 2px solid #02a6b5;
+    }
+    h2{
+        height: 0.6rem;
+        color: #fff;
+        line-height: 0.6rem;
+        text-align: center;
+        font-size: 0.25rem;
+        font-weight: 400;
+    }
+    .chart{
+        height: 3rem;
+
     }
 
+
+}
+.no{
+    background:rgba(181,132,226,0.1);
+    padding: 0.1875rem;
+    .no-hd{
+        border:1px solid rgba(25,186,139,0.17);
+    ul{
+        display: flex;
+        li{
+
+            position: relative;
+            flex: 1;
+            text-align: center;
+            height: 1rem;
+            line-height: 1rem;
+            font-size: 0.875rem;
+            color: #ffeb7b;
+            padding: 0.05rem 0;
+            font-family: electronicFont;
+            font-weight: bold;
+            list-style: none;
+        }
+    }
+    }
 }
