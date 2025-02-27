@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+
+    line-height: 1.15;
+}
+header{
+    height: 1.25rem;
+
+    background-size: 100% 100%;
+}
