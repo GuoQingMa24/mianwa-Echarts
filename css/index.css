@@ -8,7 +8,23 @@ body{
     line-height: 1.15;
 }
 header{
+    position: relative;
     height: 1.25rem;
 
     background-size: 100% 100%;
+    h1{
+        font-size: 0.475rem;
+        color: #fff;
+        text-align: center;
+        line-height: 1rem;
+
+    }
+    .showTime{
+        position: absolute;
+        right: .375rem;
+        top: 0;
+        line-height: 0.9375rem;
+        color: white;
+        font-size: 0.25rem;
+    }
 }
